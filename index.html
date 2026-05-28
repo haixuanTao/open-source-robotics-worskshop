@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=15" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=16" />
 </head>
 <body>
   <!-- ============ NAV ============ -->
@@ -24,12 +24,14 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#breakouts">Breakouts</a>
         <a href="#evidence">Evidence</a>
-        <a href="#poll">Poll</a>
         <a href="#output">Output</a>
         <a href="#schedule">Schedule</a>
         <a href="#speakers">Speakers</a>
         <a href="#projects">Projects</a>
       </nav>
+      <a href="https://github.com/haixuanTao/open-source-robotics-worskshop" target="_blank" rel="noopener" class="nav__source" aria-label="Source on GitHub" title="Source on GitHub">
+        <svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -39,7 +41,7 @@
   <!-- ============ MASTHEAD ============ -->
   <header class="masthead" id="top">
     <div class="container">
-      <p class="masthead__venue">CoRL 2026 · Half-Day Workshop · November 9, 2026</p>
+      <p class="masthead__venue">CoRL 2026 · Austin, TX · Half-Day Workshop · November 9, 2026</p>
       <h1 class="masthead__title">Open-Source Robotics:<br /><em>Closing the Gap with Closed-Source Systems</em></h1>
       <p class="masthead__authors">
         <span>Haixuan&nbsp;Xavier&nbsp;Tao<sup>1</sup></span>
@@ -105,7 +107,7 @@
           <figcaption>
             <span class="figure__k">Fig. 1 — Hardware</span>
             <h3>The cost frontier, 2005–2026</h3>
-            <p>Each point is a robot. Open designs (green) arrive late, low, and in growing numbers. Filter by type; hover for detail.</p>
+            <p>Each point is a robot. Open designs (green) arrive late, low, and in growing numbers. Filter by type; hover for detail. <a class="figure__source" href="https://docs.google.com/spreadsheets/d/146TmNJ_LGgbkW7Jo5oW5ZNtsgJaANbrCxFyVxOsiE48/edit" target="_blank" rel="noopener">Source &#8599;</a></p>
           </figcaption>
           <div class="filters" id="robotFilters"></div>
           <div class="chart-wrap chart-wrap--tall"><canvas id="robotsChart" aria-label="Robot cost versus release year, by openness"></canvas></div>
@@ -117,7 +119,7 @@
           <figcaption>
             <span class="figure__k">Fig. 2 — Datasets</span>
             <h3>Open robot-learning data is compounding</h3>
-            <p>Cumulative open demonstrations as each dataset is released. Aggregators (OXE, ARIO) are excluded to avoid double-counting.</p>
+            <p>Cumulative open demonstrations as each dataset is released. Aggregators (OXE, ARIO) are excluded to avoid double-counting. <a class="figure__source" href="https://docs.google.com/spreadsheets/d/1g5c2uuDIcs84ZHeNoukKdP2sKxjgwrqzgaczjtH8kLM/edit" target="_blank" rel="noopener">Source &#8599;</a></p>
           </figcaption>
           <div class="chart-wrap chart-wrap--tall"><canvas id="datasetsGrowthChart" aria-label="Cumulative open-source robotics episodes over time"></canvas></div>
         </figure>
@@ -127,25 +129,16 @@
           <figcaption>
             <span class="figure__k">Fig. 3 — Hardware</span>
             <h3>Where open hardware already wins</h3>
-            <p>Open vs. commercial arms at matched capability — 5, 6, and 7 DOF. Each vertical link compares the cheapest open arm with a commercial counterpart at the same DOF. Hover for detail.</p>
+            <p>Open vs. commercial arms at matched capability — 5, 6, and 7 DOF. Each vertical link compares the cheapest open arm with a commercial counterpart at the same DOF. Hover for detail. <a class="figure__source" href="https://docs.google.com/spreadsheets/d/146TmNJ_LGgbkW7Jo5oW5ZNtsgJaANbrCxFyVxOsiE48/edit" target="_blank" rel="noopener">Source &#8599;</a></p>
           </figcaption>
           <div class="chart-wrap chart-wrap--tall"><canvas id="gapChart" aria-label="Robot price versus degrees of freedom, open vs closed, linked by class"></canvas></div>
         </figure>
 
         <p class="sources">
           Sources:
-          <a href="https://docs.google.com/spreadsheets/d/146TmNJ_LGgbkW7Jo5oW5ZNtsgJaANbrCxFyVxOsiE48/edit" target="_blank" rel="noopener">hardware (77 platforms)</a> ·
+          <a href="https://docs.google.com/spreadsheets/d/146TmNJ_LGgbkW7Jo5oW5ZNtsgJaANbrCxFyVxOsiE48/edit" target="_blank" rel="noopener">hardware (83 platforms)</a> ·
           <a href="https://docs.google.com/spreadsheets/d/1g5c2uuDIcs84ZHeNoukKdP2sKxjgwrqzgaczjtH8kLM/edit" target="_blank" rel="noopener">datasets</a>
         </p>
-      </div>
-    </section>
-
-    <!-- ============ COMMUNITY POLL ============ -->
-    <section class="section" id="poll">
-      <div class="container">
-        <h2 class="section__title">Community poll</h2>
-        <!-- Rendered by poll.js from assets/data/poll.json (vote links + per-platform tallies). -->
-        <div class="poll" id="poll-card"></div>
       </div>
     </section>
 
@@ -232,15 +225,14 @@
 
   <footer class="footer">
     <div class="container">
-      <p><strong>Open-Source Robotics</strong> · CoRL 2026 · November 9, 2026</p>
+      <p><strong>Open-Source Robotics</strong> · CoRL 2026 · Austin, TX · November 9, 2026</p>
       <p class="footer__fine">Builds on <em>Open-Source Hardware in the Era of Robot Learning</em> (CoRL 2025).</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
-  <script src="assets/js/data.js?v=10"></script>
+  <script src="assets/js/data.js?v=11"></script>
   <script src="assets/js/charts.js?v=11"></script>
-  <script src="assets/js/poll.js?v=2"></script>
   <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>

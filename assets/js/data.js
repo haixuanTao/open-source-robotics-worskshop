@@ -5,7 +5,7 @@
    ============================================================ */
 
 /* ---- Robots: cost vs. release year, grouped by openness ----
-   Source: bit.ly sheet 146TmNJ_… (MOVEO dropped; Waveshare + closed drones/chassis/hands added → 77 plotted). */
+   Source: bit.ly sheet 146TmNJ_… (MOVEO dropped; Waveshare + closed drones/chassis/hands + LinkerBot hands added → 83 plotted). */
 window.ROBOTS = [
   { name: "UR5", maker: "Universal Robots", cat: "arm", open: "closed", x: 2008.5, cost: 35000 },
   { name: "Franka Emika Panda", maker: "Franka Emika", cat: "arm", open: "closed", x: 2017.5, cost: 10500 },
@@ -85,7 +85,15 @@ window.ROBOTS = [
   { name: "AgileX Scout Mini", maker: "AgileX Robotics", cat: "mobile base", open: "closed", x: 2020.5, cost: 6900 },
   { name: "iRobot Create 3", maker: "iRobot", cat: "mobile base", open: "closed", x: 2022.29, cost: 300 },
   { name: "PSYONIC Ability Hand", maker: "PSYONIC", cat: "hand", open: "closed", x: 2021.5, cost: 13000 },
-  { name: "SCHUNK SVH", maker: "SCHUNK", cat: "hand", open: "closed", x: 2014.5, cost: 45000 }
+  { name: "SCHUNK SVH", maker: "SCHUNK", cat: "hand", open: "closed", x: 2014.5, cost: 45000 },
+
+  /* LinkerBot dexterous-hand lineup (closed; Chinese commercial) */
+  { name: "Linker Hand O6", maker: "LinkerBot", cat: "hand", open: "closed", x: 2025.0, cost: 912 },
+  { name: "Linker Hand O7", maker: "LinkerBot", cat: "hand", open: "closed", x: 2025.21, cost: 1200 },
+  { name: "Linker Hand L6", maker: "LinkerBot", cat: "hand", open: "closed", x: 2025.5, cost: 2786 },
+  { name: "Linker Hand L20 Lite", maker: "LinkerBot", cat: "hand", open: "closed", x: 2025.5, cost: 4900 },
+  { name: "Linker Hand L20", maker: "LinkerBot", cat: "hand", open: "closed", x: 2025.5, cost: 6986 },
+  { name: "Linker Hand L30", maker: "LinkerBot", cat: "hand", open: "closed", x: 2025.5, cost: 14000 }
 ];
 
 /* ---- Datasets: episodes vs. release date, grouped by method ----
